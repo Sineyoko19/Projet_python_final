@@ -1,0 +1,130 @@
+body{
+    background-color: rgba(221, 221, 221);
+    color: #282828;
+    }
+h3,h1{
+    display:inline-block;
+    color:#5858FA;
+    background-color:#E6E6E6;
+    opacity:0.5;
+    width:60%;
+    margin-top:1%;
+    margin-left:5%
+}
+fieldset{
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px 15%;
+    padding:10px;
+    border-color: #181B8B;
+}
+form{
+    margin-left:30%
+}
+
+label{
+    display: block;
+    width: 300px;
+    float: left;
+    color:#363636;
+    font-weight:bold;
+    font-size: 15px;
+    
+}
+
+input{
+    border-radius:10px;
+    height:30px;
+    margin-bottom:5px;
+    font-family:arial;
+    color :#5858FA;
+    padding:5px
+
+}
+
+legend{
+    font-weight: bold;
+    font-family: Impact;
+    font-size: 30;
+    color: #181B8B;
+
+}
+
+
+input[type='submit']{
+    font-size: 20;
+    margin: 5px;
+    color: white;
+    padding: 3px;
+    border-radius: 15px;
+    padding-left: 50px;
+    padding-right:50px;
+    border:none;
+    background-color:#181B8B;
+    transition: 0.3s;
+}
+
+ div{
+    width:50%;
+    margin-left:25%;
+    color:#FA5858
+}
+h5{
+    text-align:center;
+    
+}
+.site_banner{
+
+    margin:0;
+  
+  }
+
+p{
+    color:#282828;
+}
+
+input[type=range].custom-slider.custom-slider-bullet {
+    height: 2em;
+    color: #FFF;
+    background: transparent;
+    background-image: linear-gradient(to bottom, #FFF, #999, #FFF);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 25%;
+  }
+  /*==============================*/
+  /* le curseur                   */
+  /*==============================*/
+  input[type='range'].custom-slider.custom-slider-bullet::-webkit-slider-thumb {
+    width: 2em;
+    padding: 0.25em;                                              /* largeur du bord */
+    border: 1px solid #888;
+    border-radius: 50%;
+    box-shadow: 0 0 .5em #FFF inset;
+    background: linear-gradient(#888, #FFF) content-box,          /* le centre */
+                linear-gradient(-90deg, #888, #DDD) border-box;   /* le bord */
+  }
+  input[type='range'].custom-slider.custom-slider-bullet::-moz-range-thumb {
+    width: 2em;
+    padding: 0.25em;                                              /* largeur du bord */
+    border: 1px solid #888;
+    border-radius: 50%;
+    box-shadow: 0 0 .5em #FFF inset;
+    background: linear-gradient(#888, #FFF) content-box,          /* le centre */
+                linear-gradient(-90deg, #888, #DDD) border-box;   /* le bord */
+  }
+  input[type='range'].custom-slider.custom-slider-bullet::-ms-thumb {
+    width: 2em;
+    padding: 0.25em;                                              /* largeur du bord */
+    border: 1px solid #888;
+    border-radius: 50%;
+    box-shadow: 0 0 .5em #FFF inset;
+    background: linear-gradient(#888, #FFF) content-box,          /* le centre */
+                linear-gradient(-90deg, #888, #DDD) border-box;   /* le bord */
+  }
+
+.dashboard{
+    width:50%;
+    margin-left:25%;
+    color:black
+}

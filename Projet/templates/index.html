@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Prédiction sur les risques de consommation de drogues</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
+    </head>
+
+   
+    <body>
+      <img class="site_banner" src="static/drogue.jpg" alt="Logo Bookworm" style="width: 100%;" height="300" >
+        <br>
+        <fieldset>
+        <h3>Veuillez entrer les informations suivantes  :</h3>
+        <form action="predicted" method="post">
+            <br>
+            <label for="Age">Classe Age</label>
+            <SELECT name="age" size="1">
+
+                <OPTION selected>18-24
+                
+                <OPTION>25-34
+                
+                <OPTION>35-44
+                
+                <OPTION>45-54
+                
+                <OPTION>55-64
+                
+                <OPTION>65+
+                
+                </SELECT>
+            <br> 
+            <label for="sexe">Sexe</label>
+                          
+             <input class="frm_radio" type='radio' name='sexe' value='Femme' checked/>Femme
+                <input type='radio' name='sexe' value='Masculin'/>Masculin
+            <br>
+            <label for="ed_level">Niveau d'éducation
+
+                <SELECT name="ed_level" size="1">
+                
+                <OPTION selected>A quitté l'école avant 16 ans
+                
+                <OPTION>A quitté l'école à 16 ans
+                
+                <OPTION>A quitté l'école à 17 ans
+                
+                <OPTION>A quitté l'école à 18 ans
+                
+                <OPTION>Quelques études collégiales ou universitaires, sans certificat ni diplôme
+                
+                <OPTION>Certificat/diplôme professionnel
+                
+                <OPTION>Diplôme universitaire
+                
+                <OPTION>Maitrise
+                
+                <OPTION>Doctorat
+                
+                </SELECT>
+                <br>
+                 <label for ="neurotism"> Niveau de nervosité </label>
+                 <input class="custom-slider custom-slider-bullet" type="range" id="neurotism" name="neurotism" min="-4" max="4" value="0" step='0.5'>    
+                <br>
+                  <label for ="extraversionness"> Niveau d'extraversion </label>
+                  <input class="custom-slider custom-slider-bullet" type="range" id="extraversionness" name="extraversionness" min="-4" max="4" value="0" step='0.5'>
+                <br>
+                  <label for ="openness"> Niveau d'ouverture d'esprit </label>
+                  <input class="custom-slider custom-slider-bullet" type="range" id="openness" name="openness" min="-4" max="4" value="0" step='0.5'>
+                <br>
+                  <label for ="agreability"> Niveau d'agréabilité </label>
+                  <input class="custom-slider custom-slider-bullet" type="range" id="agreability" name="agreability" min="-4" max="4" value="0" step='0.5'>
+                <br>
+                  <label for ="conscientiousness">Niveau de Conscience </label>
+                  <input class="custom-slider custom-slider-bullet" type="range" id="conscientiousness" name="conscientiousness" min="-4" max="4" value="0" step='0.5'>
+                <br>
+                  <label for ="impulsiveness"> Niveau d'Impulsivité </label>
+                  <input class="custom-slider custom-slider-bullet" type="range" id="impulsiveness" name="impulsiveness" min="-4" max="4" value="0" step='0.5'>
+                <br>
+                  <label for ="sensation_seeking"> Degré d'envie de nouvelles sensations </label>
+                  <input class="custom-slider custom-slider-bullet" type="range" id="sensation_seeking" name="sensation_seeking" min="-4" max="4" value="0" step='0.5'>
+                <br>
+                <input type="submit" name="predire" value="SOUMETTRE" id="predict"/>
+                <br> <br>
+        </form>
+         <a href ="dashboard.html" id = 'dashboard' > Voir le dataset </a>
+      
+      </fieldset>
+     
+    
+    </body>
+</html>
+
+
+
+
