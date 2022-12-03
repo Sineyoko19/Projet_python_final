@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Prédiction sur les risques de consommation de drogues</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
+    </head>   
+
+    <body>
+      <div class="dashboard">
+       <h2> Dataset sur la consommation de drogue</h2>
+       {% for table in tables %}
+          {{ table|safe }}
+         {% endfor %}
+      </div>
+    </body>
+</html>
